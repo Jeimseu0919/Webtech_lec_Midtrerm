@@ -30,7 +30,7 @@
         <div class="block animated fadeInDown">
             <nav class="navbar has-navbar-fixed-top is-dark">
                 <div class="navbar-brand logoFont">
-                    <a href="" class="navbar-item">
+                    <a href="index.html" class="navbar-item">
                        <img src="./assets/images/logo.png"> <h1 class="title is-4">Foodie Online Recipe<h1>
                     </a>
                 </div>
@@ -53,75 +53,99 @@
         <!--JAMES-->
         <CENTER><span style="font-size:2.5em;">Best Recipe</span></CENTER>
         <br>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
 
-     <div class="container is-fullhd">
-     <!-- Images used to open the lightbox -->
-<div class="row">
-  <div class="column">
-    <img src="img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+.image {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+
+<center>
+<h1>Adobo</h1>
+</center>
+<center>
+<div class="container">
+  <img src="assets/images/Adobo.jpg" class="image" width="25px height="10px	>
+  <div class="overlay">
+    <div class="text">Ingredients
+2 lbs pork belly<br>
+2 tablespoons garlic minced or crushed<br>
+5 pieces dried bay leaves<br>
+4 tablespoons vinegar<br>
+1/2 cup soy sauce<br>
+1 tablespoon peppercorn<br>
+2 cups water<br>
+Salt to taste</div>
   </div>
 </div>
+</center>
 
-<!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="img1_wide.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="img2_wide.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="img3_wide.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="img4_wide.jpg" style="width:100%">
-    </div>
-
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-    <!-- Thumbnail image controls -->
-    <div class="column">
-      <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
-    </div>
+<center>
+<center>
+	<br>
+<h1>Bulalo</h1>
+</center>
+<div class="container">
+  <img src="assets/images/bulalo.jpg" class="image" width="25px height="10px">
+  <div class="overlay">
+    <div class="text">
+INGREDIENTS<br>
+2	Beef marrow bones (cut to expose marrow on one end)<br>
+1 pound	Beef shank<br>
+1	Onion quartered<br>
+3 cloves	Garlic<br>
+1 teaspoon	Black peppercorns<br>
+2 tablespoons	Patis (fish sauce)<br>
+Salt (to taste)<br>
+2 cobs	Corn (cut into 2-inch segments)<br>
+1	Chayote (peeled and cubed)<br>
+3	Baby bok choy (leaves separated)</div>
   </div>
+</div>
+</center>
+
+<div class="container">
+<a href="Recipe.html" id="aboutLink" class="navbar-item"><h1>SEE MORE RECIPE<h1></a>
 </div>
 
     </div>
