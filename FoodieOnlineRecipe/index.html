@@ -1,6 +1,13 @@
 <!Doctype html>
 <html lang="en">
 
+<!-- James -->
+<!-- logo -->
+<link href="assets/images/logo.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+<!--// logo -->
+
+
 <head>
     <title>Foodie Online Recipe</title>
 
@@ -31,12 +38,12 @@
             <nav class="navbar has-navbar-fixed-top is-dark">
                 <div class="navbar-brand logoFont">
                     <a href="index.html" class="navbar-item">
-                       <img src="./assets/images/logo.png"> <h1 class="title is-4">Foodie Online Recipe<h1>
+                       <img src="assets/images/logo.png"> <h1 class="title is-4">Foodie Online Recipe<h1>
                     </a>
                 </div>
                 <div class="navbar-end navbar-menu">
                     <a href="index.html" id="homelink" class="navbar-item">Home</a>
-                    <a href="/Youtube/index.html" id="homelink" class="navbar-item">Video</a>
+                    <a href=Youtube/index.html" id="homelink" class="navbar-item">Video</a>
                     <a href="recipe.html" id="Search" class="navbar-item">Recipe</a>
                     <a href="about.html" id="aboutLink" class="navbar-item">About</a>
                     </a>
@@ -49,104 +56,165 @@
         <br>
         <CENTER><span style="font-size:1.5em;">A foodie Online Recipe is a web system that you will aviable to search the recipe that you wants.<br>By using this the user can follow the right recipe that they want to cook like a pro. <br>jahsKAHSJASASMDUSDJASNDD</span></CENTER>
         <BR>
-
-        <!--JAMES-->
-        <CENTER><span style="font-size:2.5em;">Best Recipe</span></CENTER>
         <br>
-<!DOCTYPE html>
-<html>
-<head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.container {
-  position: relative;
-  width: 50%;
+* {
+    box-sizing: border-box;
 }
 
-.image {
-  display: block;
-  width: 50%;
-  height: auto;
+body {
+    background-color: #000000;
+    padding: 20px;
+    font-family: Arial;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #000000;
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
 }
 
-.container:hover .overlay {
-  opacity: 1;
+h1 {
+    font-size: 50px;
+    word-break: break-all;
 }
 
-.text {
-  color: white;
-  font-size: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: gray;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
 </style>
 </head>
+<body>
 
-<center>
-<h1>Adobo</h1>
-</center>
-<center>
-<div class="container">
-  <img src="assets/images/Adobo.jpg" class="image" width="25px height="10px	>
-  <div class="overlay">
-    <div class="text">Ingredients
-2 lbs pork belly<br>
-2 tablespoons garlic minced or crushed<br>
-5 pieces dried bay leaves<br>
-4 tablespoons vinegar<br>
-1/2 cup soy sauce<br>
-1 tablespoon peppercorn<br>
-2 cups water<br>
-Salt to taste</div>
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1><center>Best Recipe</center></h1>
+<hr>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="assets/images/adobo.png" alt="Mountains" style="width:100%">
+      <h3>ABODO</h3>
+      <p>Ingredients<br>
+2 lbs chicken cut into serving pieces<br>
+3 pieces dried bay leaves<br>
+8 tablespoons soy sauce<br>
+4 tablespoons white vinegar<br>
+5 cloves garlic crushed<br>
+1 1/2 cups water<br>
+1/4 teaspoon Salt<br>
+1 cups water<br>
+1 teaspoon whole peppercorn</p>
+
+<a href="https://www.youtube.com/watch?v=Ix5Dnud1bl0"><img src="assets/images/youtube.png" width="50" height="25"></a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+    <img src="assets/images/bulalo.jpg" alt="Lights" style="width:100%">
+      <h3>BULALO</h3>
+      <p>Ingredients<br>
+2 ½ lbs. beef shank bulalo<br>
+1 Knorr beef cube<br>
+6 to 8 leaves Napa cabbage<br>
+1 sweet corn cut into 5 small pieces<br>
+15 to 18 pieces green beans<br>
+1 medium yellow onion wedged<br>
+1 tablespoon whole peppercorn<br>
+3 tablespoons fish sauce patis<br>
+8 cups water</p>
+<a href="https://www.youtube.com/watch?v=sRs-rtAcSGU"><img src="assets/images/youtube.png" width="50" height="25"></a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+    <img src="assets/images/salad.png" alt="Nature" style="width:100%">
+      <h3>SALAD</h3>
+      <p>Ingredients<br>
+3/4 lb. elbow macaroni<br>
+1 pack Lady's Choice Mayonnaise 220 ml<br>
+1 can fruit cocktail 15 oz.<br>
+12 oz. pineapple chunks.<br>
+1 can condensed milk 14 oz.<br>
+3/4 cup raisins<br>
+3/4 cup kaong<br>
+3/4 cup nata de coco<br>
+2 quarts water</p>
+<a href="https://www.youtube.com/watch?v=tUehDuDoW6M"><img src="assets/images/youtube.png" width="50" height="25"></a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+    <img src="assets/images/kare.png" alt="Mountains" style="width:100%">
+      <h3>KARE-KARE</h3>
+      <p>Ingredients<br>
+1 1/2 lb. ox tail<br>
+1 lb beef tripe<br>
+1 piece Knorr Beef Cube<br>
+1 bunch pechay<br>
+1 piece talong sliced<br>
+12 pieces sitaw cut into 2 inch pieces<br>
+1 cup sliced banana blossoms<br>
+3/4 cup peanut butter<br>
+1/4 cup bagoong alamang</p>
+<a href="https://www.youtube.com/watch?v=YvTs4on5aVM"><img src="assets/images/youtube.png" width="50" height="25"></a>
+    </div>
   </div>
 </div>
+
+<iframe src="https://www.facebook.com/plugins/share_button.php?href=file%3A%2F%2F%2FUsers%2Fjames0919%2FDesktop%2FFoodieOnlineRecipe%2Findex.html&layout=button&size=large&mobile_iframe=true&width=0&height=0&appId" width="0" height="0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<center>
+<a href="recipe.html"><img src="assets/images/see.png" width="100" height="100"></a>
 </center>
 
-<center>
-<center>
-	<br>
-<h1>Bulalo</h1>
-</center>
-<div class="container">
-  <img src="assets/images/bulalo.jpg" class="image" width="25px height="10px">
-  <div class="overlay">
-    <div class="text">
-INGREDIENTS<br>
-2	Beef marrow bones (cut to expose marrow on one end)<br>
-1 pound	Beef shank<br>
-1	Onion quartered<br>
-3 cloves	Garlic<br>
-1 teaspoon	Black peppercorns<br>
-2 tablespoons	Patis (fish sauce)<br>
-Salt (to taste)<br>
-2 cobs	Corn (cut into 2-inch segments)<br>
-1	Chayote (peeled and cubed)<br>
-3	Baby bok choy (leaves separated)</div>
-  </div>
-</div>
-</center>
-
-<div class="container">
-<a href="Recipe.html" id="aboutLink" class="navbar-item"><h1>SEE MORE RECIPE<h1></a>
-</div>
 
     </div>
     <!--JAMES-->
