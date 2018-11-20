@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	
+	
 	$.get(
 			"https://www.googleapis.com/youtube/v3/channels",{
 				part: 'contentDetails',
@@ -12,6 +14,7 @@ $(document).ready(function(){
 					})
 				}
 		);
+
 
 		function getVids(pid){
 			$.get(
@@ -27,12 +30,16 @@ $(document).ready(function(){
 						videoTitle = item.snippet.title;
 						videoId = item.snippet.resourceId.videoId;
 
-						output = '<li><iframe src=\"//www.youtube.com/embed/'+videoId+'\"></iframe><li>';
+						output = '<li><iframe id="myiframe" src=\"//www.youtube.com/embed/'+videoId+'\" frameborder="0" allowfullscreen></iframe><p>'+videoTitle+'</p></li>';
 
 						$('#results').append(output);
 					})
 				}
 		);
+		
 
 		}
+		
+		
+		
 });
